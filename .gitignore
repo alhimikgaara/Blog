@@ -3,3 +3,14 @@
 ################################################################################
 
 /.vs
+/Blog.Interfaces/obj
+/Blog.Interfaces/bin
+/Blog.Models/obj/Debug
+/Blog.Models/bin
+/Blog.Services/obj
+/Blog.Services/bin
+/Blog.Tests/bin/Debug
+/Blog.Tests/obj/Debug
+/Blog.Website/bin
+/Blog.Website/obj/Debug
+/packages
