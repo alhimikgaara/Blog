@@ -14,3 +14,7 @@
 /Blog.Website/bin
 /Blog.Website/obj/Debug
 /packages
+/Blog.Website/obj/Release
+/Blog.Tests/obj/Release
+/Blog.Models/obj/Release
+/Publish
