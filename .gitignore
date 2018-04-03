@@ -18,3 +18,5 @@
 /Blog.Tests/obj/Release
 /Blog.Models/obj/Release
 /Publish
+/Blog.Common/bin
+/Blog.Common/obj/Debug
