@@ -22,10 +22,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/31/2018 15:04:31</publishTime>
     </File>
     <File Include="bin/Blog.Common.dll">
-      <publishTime>04/03/2018 09:12:46</publishTime>
+      <publishTime>04/04/2018 10:23:13</publishTime>
     </File>
     <File Include="bin/Blog.Common.pdb">
-      <publishTime>04/03/2018 09:12:46</publishTime>
+      <publishTime>04/04/2018 10:23:13</publishTime>
     </File>
     <File Include="bin/Blog.Interfaces.dll">
       <publishTime>04/02/2018 12:18:27</publishTime>
@@ -34,19 +34,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2018 12:18:27</publishTime>
     </File>
     <File Include="bin/Blog.Models.dll">
-      <publishTime>04/02/2018 12:26:44</publishTime>
+      <publishTime>04/03/2018 09:34:56</publishTime>
     </File>
     <File Include="bin/Blog.Models.dll.config">
       <publishTime>03/31/2018 15:04:01</publishTime>
     </File>
     <File Include="bin/Blog.Models.pdb">
-      <publishTime>04/02/2018 12:26:44</publishTime>
+      <publishTime>04/03/2018 09:34:56</publishTime>
     </File>
     <File Include="bin/Blog.Services.dll">
-      <publishTime>04/03/2018 09:12:50</publishTime>
+      <publishTime>04/04/2018 10:23:17</publishTime>
     </File>
     <File Include="bin/Blog.Services.pdb">
-      <publishTime>04/03/2018 09:12:50</publishTime>
+      <publishTime>04/04/2018 10:23:17</publishTime>
     </File>
     <File Include="bin/Blog.Tests.dll">
       <publishTime>04/02/2018 12:18:26</publishTime>
@@ -55,10 +55,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2018 12:18:26</publishTime>
     </File>
     <File Include="bin/Blog.Website.dll">
-      <publishTime>04/03/2018 09:13:34</publishTime>
+      <publishTime>04/04/2018 10:25:58</publishTime>
     </File>
     <File Include="bin/Blog.Website.pdb">
-      <publishTime>04/03/2018 09:13:34</publishTime>
+      <publishTime>04/04/2018 10:25:58</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>

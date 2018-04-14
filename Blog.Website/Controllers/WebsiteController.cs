@@ -36,7 +36,7 @@ namespace Blog.Website.Controllers
             }
 
             var joined = string.Join(",", listOfResults);
-            var format = $@"{"{\"myArray\": ["}{joined}{"]}"}";
+            var format = $@"{"{\"World\": ["}{joined}{"]}"}";
 
             var desirialized = new JavaScriptSerializer().Deserialize<object>(format);
             return Json(desirialized, JsonRequestBehavior.AllowGet);
