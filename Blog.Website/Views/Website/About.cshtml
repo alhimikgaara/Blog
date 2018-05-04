@@ -1,0 +1,14 @@
+﻿@using Newtonsoft.Json
+@model JsonResult
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+</head>
+<body>
+@JsonConvert.SerializeObject(Model.Data)
+<div id="app"></div>
+@Scripts.Render("~/bundles/ReactJs")
+</body>
+</html>

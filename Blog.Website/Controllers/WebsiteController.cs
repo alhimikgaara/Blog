@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using Blog.Common.Constants;
+using Newtonsoft.Json;
 
 namespace Blog.Website.Controllers
 {
@@ -36,10 +37,19 @@ namespace Blog.Website.Controllers
             }
 
             var joined = string.Join(",", listOfResults);
-            var format = $@"{"{\"World\": ["}{joined}{"]}"}";
 
-            var desirialized = new JavaScriptSerializer().Deserialize<object>(format);
-            return Json(desirialized, JsonRequestBehavior.AllowGet);
+            var format = $@"{"{\"World\": ["}{joined}{"]}"}";
+            var format2 = $@"{"[{\"componentName\": \"AppContainer\", \"data\": { \"isEditorMode\": false},\"nestedComponents\": "+ format + "}]"}";
+
+
+
+            var desirialized = new JavaScriptSerializer().Deserialize<object>(format2);
+
+            var pp = Json(desirialized, JsonRequestBehavior.AllowGet);
+
+            var tt = JsonConvert.SerializeObject(pp.Data);
+            //return Json(desirialized, JsonRequestBehavior.AllowGet);
+            return View("About", pp);
         }
     }
 }
