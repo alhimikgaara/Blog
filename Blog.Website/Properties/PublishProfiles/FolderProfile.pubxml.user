@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
-      <publishTime>03/31/2018 15:04:31</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/22/2013 08:43:40</publishTime>
@@ -19,46 +19,46 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/22/2013 08:43:40</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
-      <publishTime>03/31/2018 15:04:31</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="bin/Blog.Common.dll">
-      <publishTime>05/04/2018 14:11:16</publishTime>
+      <publishTime>05/25/2018 10:56:37</publishTime>
     </File>
     <File Include="bin/Blog.Common.pdb">
-      <publishTime>05/04/2018 14:11:16</publishTime>
+      <publishTime>05/25/2018 10:56:37</publishTime>
     </File>
     <File Include="bin/Blog.Interfaces.dll">
-      <publishTime>05/04/2018 14:11:16</publishTime>
+      <publishTime>05/24/2018 11:45:21</publishTime>
     </File>
     <File Include="bin/Blog.Interfaces.pdb">
-      <publishTime>05/04/2018 14:11:16</publishTime>
+      <publishTime>05/24/2018 11:45:21</publishTime>
     </File>
     <File Include="bin/Blog.Models.dll">
-      <publishTime>05/04/2018 14:11:15</publishTime>
+      <publishTime>05/24/2018 11:45:21</publishTime>
     </File>
     <File Include="bin/Blog.Models.dll.config">
       <publishTime>03/31/2018 15:04:01</publishTime>
     </File>
     <File Include="bin/Blog.Models.pdb">
-      <publishTime>05/04/2018 14:11:15</publishTime>
+      <publishTime>05/24/2018 11:45:21</publishTime>
     </File>
     <File Include="bin/Blog.Services.dll">
-      <publishTime>05/04/2018 15:04:10</publishTime>
+      <publishTime>05/25/2018 12:07:39</publishTime>
     </File>
     <File Include="bin/Blog.Services.pdb">
-      <publishTime>05/04/2018 15:04:10</publishTime>
+      <publishTime>05/25/2018 12:07:39</publishTime>
     </File>
     <File Include="bin/Blog.Tests.dll">
-      <publishTime>05/04/2018 14:11:15</publishTime>
+      <publishTime>05/24/2018 11:45:22</publishTime>
     </File>
     <File Include="bin/Blog.Tests.pdb">
-      <publishTime>05/04/2018 14:11:15</publishTime>
+      <publishTime>05/24/2018 11:45:22</publishTime>
     </File>
     <File Include="bin/Blog.Website.dll">
-      <publishTime>05/04/2018 15:04:14</publishTime>
+      <publishTime>05/25/2018 12:10:33</publishTime>
     </File>
     <File Include="bin/Blog.Website.pdb">
-      <publishTime>05/04/2018 15:04:14</publishTime>
+      <publishTime>05/25/2018 12:10:33</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
@@ -82,22 +82,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/06/2016 15:09:52</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>08/15/2017 14:12:32</publishTime>
+      <publishTime>08/15/2017 13:12:32</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll">
-      <publishTime>10/09/2017 12:25:46</publishTime>
+      <publishTime>10/10/2017 08:41:14</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll">
-      <publishTime>10/09/2017 12:25:46</publishTime>
+      <publishTime>10/10/2017 08:41:14</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll">
-      <publishTime>10/09/2017 12:25:46</publishTime>
+      <publishTime>10/10/2017 08:41:14</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/05/2012 11:08:46</publishTime>
+      <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>08/03/2014 21:33:56</publishTime>
+      <publishTime>08/03/2014 20:33:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>02/20/2018 14:37:48</publishTime>
@@ -274,103 +274,106 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>09/10/2013 18:28:38</publishTime>
+      <publishTime>07/17/2013 17:03:52</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Content/bundle.js">
-      <publishTime>05/04/2018 14:40:00</publishTime>
+      <publishTime>05/24/2018 17:11:20</publishTime>
     </File>
     <File Include="Content/main.css">
       <publishTime>04/14/2018 16:55:14</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>03/31/2018 15:04:25</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
-      <publishTime>03/31/2018 15:04:26</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.js">
-      <publishTime>03/31/2018 15:04:26</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.map">
-      <publishTime>03/31/2018 15:04:26</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
-      <publishTime>03/31/2018 15:04:28</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>03/31/2018 15:04:28</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>03/31/2018 15:04:29</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>03/31/2018 15:04:29</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
-      <publishTime>03/31/2018 15:04:27</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/respond.js">
-      <publishTime>03/31/2018 15:04:28</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Scripts/respond.min.js">
-      <publishTime>03/31/2018 15:04:28</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/25/2018 09:40:55</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/14/2018 16:59:48</publishTime>
+      <publishTime>05/25/2018 10:26:39</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Views/Website/About.cshtml">
-      <publishTime>05/04/2018 14:55:33</publishTime>
+      <publishTime>05/25/2018 10:45:34</publishTime>
+    </File>
+    <File Include="Views/Website/ApplicationMain.cshtml">
+      <publishTime>05/25/2018 10:45:34</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>03/31/2018 15:04:24</publishTime>
+      <publishTime>05/24/2018 11:37:41</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/03/2018 09:04:50</publishTime>
+      <publishTime>05/24/2018 11:45:29</publishTime>
     </File>
   </ItemGroup>
 </Project>

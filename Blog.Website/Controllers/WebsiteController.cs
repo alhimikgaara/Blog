@@ -9,6 +9,16 @@ using Newtonsoft.Json;
 
 namespace Blog.Website.Controllers
 {
+    public class Columns
+    {
+        public List<string> controllernames { get; set; }
+        public List<string> actionnames { get; set; }
+    }
+
+    public class RootObject
+    {
+        public Columns columns { get; set; }
+    }
     public class WebsiteController : Controller
     {
         private readonly Assembly _assembly;
@@ -17,8 +27,22 @@ namespace Blog.Website.Controllers
             _assembly = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(t => t.FullName.StartsWith(Namespaces.Services));
         }
 
-        public ActionResult Build(Dictionary<string,List<string>> list)
+        public ActionResult Build()
         {
+            string contents;
+            using (var wc = new System.Net.WebClient())
+                contents = wc.DownloadString("http://gsx2json.com/api?id=1o4W_TG-td8Rm8zfoqwuGExXc7ECDRTNlfU1CuQZ83Rc&rows=false");
+
+            var model = JsonConvert.DeserializeObject<RootObject>(contents);
+
+            var list = new Dictionary<string, string[]>();
+
+            for (int i = 0; i < model.columns.controllernames.Count; i++)
+            {
+                list.Add(model.columns.controllernames[i], model.columns.actionnames[i].Split(','));
+            }
+
+
             var listOfResults = new List<string>();
             
             foreach (var compo in list)
@@ -39,17 +63,11 @@ namespace Blog.Website.Controllers
             var joined = string.Join(",", listOfResults);
 
             var format = $@"{"{\"World\": ["}{joined}{"]}"}";
-            var format2 = $@"{"[{\"componentName\": \"AppContainer\", \"data\": { \"isEditorMode\": false},\"nestedComponents\": "+ format + "}]"}";
-
-
+            var format2 = $@"{"["+ format + "]"}";
 
             var desirialized = new JavaScriptSerializer().Deserialize<object>(format2);
-
             var pp = Json(desirialized, JsonRequestBehavior.AllowGet);
-
-            var tt = JsonConvert.SerializeObject(pp.Data);
-            //return Json(desirialized, JsonRequestBehavior.AllowGet);
-            return View("About", pp);
+            return View("ApplicationMain", pp);
         }
     }
 }

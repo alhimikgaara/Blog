@@ -1,0 +1,4 @@
+﻿@using Newtonsoft.Json
+@model JsonResult
+<pre id="MyJson" style="word-wrap: break-word; white-space: pre-wrap;display:none;">@JsonConvert.SerializeObject(Model.Data)</pre>
+

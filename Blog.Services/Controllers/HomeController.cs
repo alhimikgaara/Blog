@@ -6,12 +6,12 @@ namespace Blog.Services.Controllers
     {
         public ActionResult Index()
         {
-            return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            return View();
         }
 
         public ActionResult About()
         {
-            return Json(new { mdeeee = "vsjakoe" }, JsonRequestBehavior.AllowGet);
+            return Json(new { Details = "vsjakoe" }, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Contact()

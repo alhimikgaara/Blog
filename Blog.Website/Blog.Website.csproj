@@ -193,7 +193,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Website\About.cshtml" />
+    <Content Include="Views\Website\ApplicationMain.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

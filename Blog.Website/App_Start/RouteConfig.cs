@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 using Blog.Common.Constants;
+using Newtonsoft.Json;
 
 namespace Blog.Website
 {
@@ -11,29 +12,15 @@ namespace Blog.Website
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            var generalList = new Dictionary<string, List<string>>();
-
-            var actionsList = new List<string>()
-            {
-                ActionNames.Contact,
-                ActionNames.Index
-            };
-
-            generalList[ControllerNames.HomeFull] = actionsList;
-
-
-            var actionsListOneMore = new List<string>()
-            {
-                ActionNames.Index
-            };
             
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{list}",
-                defaults: new { controller = ControllerNames.WebsiteShort, action = ActionNames.Build,
-                    list = generalList
+                url: "{controller}/{action}",
+                defaults: new { controller = ControllerNames.HomeShort, action = ActionNames.Index
                 }
             );
+
+            
         }
     }
 }

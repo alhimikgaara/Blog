@@ -52,13 +52,13 @@
 
 	var _reactDom = __webpack_require__(158);
 
-	var _HelloWorld = __webpack_require__(159);
+	var _HelloWorldSecond = __webpack_require__(159);
 
-	var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
+	var _HelloWorldSecond2 = _interopRequireDefault(_HelloWorldSecond);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(_HelloWorld2.default, null), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(_HelloWorldSecond2.default, null), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -19765,7 +19765,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19788,48 +19788,81 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var propTypes = {
-	    World: _propTypes2.default.string.isRequired
-	};
+	var HelloWorldSecond = function (_React$Component) {
+	  _inherits(HelloWorldSecond, _React$Component);
 
-	var HelloWorld = function (_React$Component) {
-	    _inherits(HelloWorld, _React$Component);
+	  function HelloWorldSecond(props) {
+	    _classCallCheck(this, HelloWorldSecond);
 
-	    function HelloWorld() {
-	        _classCallCheck(this, HelloWorld);
+	    var _this = _possibleConstructorReturn(this, (HelloWorldSecond.__proto__ || Object.getPrototypeOf(HelloWorldSecond)).call(this, props));
 
-	        return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).apply(this, arguments));
+	    _this.state = {
+	      error: null,
+	      isLoaded: false,
+	      items: []
+	    };
+	    return _this;
+	  }
+
+	  _createClass(HelloWorldSecond, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      fetch('http://blog.localhost/Website/Build').then(function (res) {
+	        return res.json();
+	      }).then(function (result) {
+	        _this2.setState({
+	          isLoaded: true,
+	          items: result.World
+	        });
+	      },
+	      // Note: it's important to handle errors here
+	      // instead of a catch() block so that we don't swallow
+	      // exceptions from actual bugs in components.
+	      function (error) {
+	        _this2.setState({
+	          isLoaded: true,
+	          error: error
+	        });
+	      });
 	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _state = this.state,
+	          error = _state.error,
+	          isLoaded = _state.isLoaded,
+	          items = _state.items;
 
-	    _createClass(HelloWorld, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { bsStyle: 'danger' },
-	                    'Hello World Danger'
-	                ),
-	                _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { bsStyle: 'primary' },
-	                    'Hello World Primary'
-	                ),
-	                _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { bsStyle: 'success' },
-	                    'Hello World Success'
-	                )
-	            );
-	        }
-	    }]);
+	      console.log(items + "1" + isLoaded);
+	      if (error) {
+	        return _react2.default.createElement(
+	          'div',
+	          null,
+	          'Error: ',
+	          error.message
+	        );
+	      } else if (!isLoaded) {
+	        return _react2.default.createElement(
+	          'div',
+	          null,
+	          'Loading...'
+	        );
+	      } else {
+	        return _react2.default.createElement(
+	          'ul',
+	          null,
+	          items
+	        );
+	      }
+	    }
+	  }]);
 
-	    return HelloWorld;
+	  return HelloWorldSecond;
 	}(_react2.default.Component);
 
-	exports.default = HelloWorld;
+	exports.default = HelloWorldSecond;
 
 /***/ }),
 /* 160 */
